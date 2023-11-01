@@ -1,0 +1,39 @@
+{
+  "name": "hilton-strapi-v-3",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "docker:build": "docker build -t hilton-strapi .",
+    "docker:run": "docker run -p 1337:1337 -d --name hilton-strapi hilton-strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "strapi": "3.6.11",
+    "strapi-admin": "3.6.11",
+    "strapi-utils": "3.6.11",
+    "strapi-plugin-content-type-builder": "3.6.11",
+    "strapi-plugin-content-manager": "3.6.11",
+    "strapi-plugin-users-permissions": "3.6.11",
+    "strapi-plugin-email": "3.6.11",
+    "strapi-plugin-upload": "3.6.11",
+    "strapi-plugin-i18n": "3.6.11",
+    "strapi-connector-mongoose": "3.6.11"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "51a7f1ce-8f51-43b8-965f-f27d53ef02fb",
+    "template": "https://github.com/strapi/strapi-template-ecommerce"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
+  },
+  "license": "MIT"
+}

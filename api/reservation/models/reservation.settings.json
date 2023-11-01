@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "name": "reservation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "adult": {
+      "type": "integer",
+      "default": 2,
+      "required": true
+    },
+    "children": {
+      "type": "integer"
+    },
+    "expectTime": {
+      "type": "datetime",
+      "required": true
+    },
+    "status": {
+      "type": "integer",
+      "default": 1
+    },
+    "guest": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
